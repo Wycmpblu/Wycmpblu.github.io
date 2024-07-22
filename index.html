@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Test HTML | CSS</title>
+   <link rel="stylesheet" href="style.css" />
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="logo">RefineColor</div>
+      <div class="hamburger">
+         <div class="line" style="border-radius: 10px;"></div>
+         <div class="line" style="border-radius: 10px; width: 20px; margin: auto;"></div>
+         <div class="line" style="border-radius: 10px;"></div>
+      </div>
+      <nav class="nav-bar">
+         <ul>
+            <li>
+               <a href="/" class="active">Главная</a>
+               <hr>
+            </li>
+            <li>
+               <a href="/products">Продукция</a>
+               <hr>
+            </li>
+            <li>
+               <a href="#">Контакты</a>
+               <hr>
+            </li>
+         </ul>
+         <ul class="contacts">
+            <div>123</div>
+         </ul>
+      </nav>
+   </header>
+
+   <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+         navBar = document.querySelector(".nav-bar");
+         navBar.classList.toggle("active");
+         hamburgerMenu = document.querySelector(".hamburger");
+         hamburgerMenu.classList.toggle("active");
+      }   
+   </script>
+
+</body>
+
+</html>
