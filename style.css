@@ -30,6 +30,7 @@ header {
 
 .hamburger {
    display: none;
+   border: 0;
 }
 
 .nav-bar ul {
